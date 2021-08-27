@@ -1,0 +1,94 @@
+<html>
+<head>
+<style>
+body{
+background-color: #FFCCFF;
+}
+</style>
+<script type="text/javascript">
+
+function dw(fbuton)
+{
+fbuton.style.borderColor= "black white white black";
+}
+function up(fbuton)
+{
+fbuton.style.borderColor= "white black black white";
+}
+</script>
+<script type="text/javascript">
+
+function startTime()
+
+{
+
+var today=new Date()
+
+var h=today.getHours()
+
+var m=today.getMinutes()
+
+var s=today.getSeconds()
+
+// add a zero in front of numbers<10
+
+m=checkTime(m)
+
+s=checkTime(s)
+
+document.getElementById('txt').innerHTML=h+":"+m+":"+s
+
+t=setTimeout('startTime()',500)
+
+}
+
+function checkTime(i)
+
+{
+
+if (i<10)
+
+{i="0" + i}
+
+return i
+
+}
+
+</script>
+</head>
+<body>
+
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+</body>
+<img src="rola.png" align: top width="1333" height="550"
+<br>
+<br>
+<body>
+<a class="nav-link" href="http://
+/adinacristiana.atwebpages.com/sitefinaladinacristiana">Home</a></body>
+<br>
+<h1 style="font-size:60px; text-align:center;">Program cinematografe </h1>
+<br>
+<p> Alege un cinematograf:</p>
+<a href="https://www.cinemagia.ro/program-cinema/sergiu-nicolaescu-targu-jiu/" class="fbuton" onmousedown="dw(this);" onmouseout="up(this);">Cinema "Sergiu Nicolaescu"</a>
+<br>
+<br>
+<a href="https://m.cinemagia.ro/program-cinema/cinema-city-targu-jiu/" class="fbuton" onmousedown="dw(this);" onmouseout="up(this);">Cinema City Targu-Jiu</a>
+<br>
+<br>
+<a href="https://m.cinemagia.ro/program-cinema/cinema-city-shopping-city-timisoara/" class="fbuton" onmousedown="dw(this);" onmouseout="up(this);">Cinema City Timisoara</a>
+<br>
+<br>
+<a href="https://www.cinemagia.ro/program-cinema/cinema-city-iulius-mall-timisoara/" class="fbuton" onmousedown="dw(this);" onmouseout="up(this);">Cinema City Timisoara- Iulius Mall</a>
+
+</body>
+<br>
+<br>
+<img src="rola.png" align: bottom width="1333" height="550"
+
+</body>
+
+</html>

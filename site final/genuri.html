@@ -1,0 +1,119 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function check(browser)
+
+{
+
+document.getElementById("answer").value=browser
+
+}
+
+</script>
+<script type="text/javascript">
+
+function displaymessage()
+{
+alert("Vizualizati cateva din sugetiile noastre pentru genul ales!")
+}
+</script>
+
+<script>
+function dw(fbuton)
+{
+fbuton.style.borderColor= "black white white black";
+}
+function up(fbuton)
+{
+fbuton.style.borderColor= "white black black white";
+}
+</script>
+
+<script type="text/javascript">
+function celtofar (form)
+{
+form.fahrenheit.value = form.celsius.value*1.8+32
+}
+function fartocel (form)
+{
+form.celsius.value = round((form.fahrenheit.value-32)/1.8)
+}
+</script>
+</head>
+
+<body>
+<form>
+Celsius
+<input type ="text" name="celsius" SIZE=15
+onkeypress ="celtofar(this.form)">
+Fahrenheit
+<input type="text" name="fahrenheit" SIZE=15
+onkeypress ="fartocel(this.form)">
+</form>
+<br>
+<br>
+<body>
+<a class="nav-link" href="http://
+/adinacristiana.atwebpages.com/sitefinaladinacristiana">Home</a></body>
+<br>
+<h1 style="font-size:60px; text-align:center;">Genuri de filme si seriale</h1>
+<br>
+<img src="popcorn.jpg" align= right>
+
+<p>Alegeti un gen de film/serial:</p>
+
+<form>
+
+<input type="radio" name="filme" onclick="check(this.value)" value="Filme horror">Filme horror<br />
+
+<input type="radio" name="filme" onclick="check(this.value)" value="Filme romatice">Filme romatice<br />
+
+<input type="radio" name="filme" onclick="check(this.value)" value="Comedii">Filme de comedie<br />
+
+<input type="radio" name="filme" onclick="check(this.value)" value="Drame">Filme de drama<br />
+
+<input type="radio" name="seriale" onclick="check(this.value)" value="Actiune"> Seriale de actiune <br />
+
+<input type="radio" name="seriale" onclick="check(this.value)" value="Adolescenti">Seriale pentru adolescenti<br />
+
+<input type="radio" name="seriale" onclick="check(this.value)" value="Comedii">Seriale de comedie<br />
+
+<input type="radio" name="seriale" onclick="check(this.value)" value=" Seriale de drama">Seriale de drama<br />
+
+
+
+<br />
+
+Genul preferat: <input type="text" id="answer" size="20">
+<form>
+<input type="button" value="Click me!" onclick="displaymessage()">
+</form>
+
+</form>
+<p> Sugestiile noastre:</p>
+<BODY>
+<a href="https://www.cinemagia.ro/filme-horror/" class="fbuton" onmousedown="dw(this);" onmouseout="up(this);">Filme horror</a>
+<br>
+<br>
+<a href="https://www.cinemagia.ro/filme-dragoste/" class="fbuton" onmousedown="dw(this);" onmouseout="up(this);">Filme romatice</a>
+<br>
+<br>
+<a href="https://www.cinemagia.ro/filme-comedie/" class="fbuton" onmousedown="dw(this);" onmouseout="up(this);">Filme de comedie</a>
+<br>
+<br>
+<a href="https://www.cinemagia.ro/filme-drama/" class="fbuton" onmousedown="dw(this);" onmouseout="up(this);">Filme de drama</a>
+<br>
+<br>
+<a href="https://www.cinemagia.ro/seriale-tv-netflix/actiune/" class="fbuton" onmousedown="dw(this);" onmouseout="up(this);"> Seriale de actiune</a>
+<br>
+<br>
+<a href="https://www.cinemagia.ro/liste/cele-mai-bune-seriale-pentru-adolescenti-5138/" class="fbuton" onmousedown="dw(this);" onmouseout="up(this);"> Seriale pentru adolescenti</a>
+<br>
+<br>
+<a href="https://www.cinemagia.ro/seriale-tv-netflix/comedie/" class="fbuton" onmousedown="dw(this);" onmouseout="up(this);"> Seriale de comedie</a>
+<br>
+<br>
+<a href="https://www.cinemagia.ro/seriale-tv-netflix/drama/" class="fbuton" onmousedown="dw(this);" onmouseout="up(this);"> Seriale de drama</a>
+</BODY>
+</body>
